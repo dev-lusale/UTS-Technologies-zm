@@ -366,6 +366,7 @@ body {
     background: #F19C34;
     border: none;
     color: white;
+    border-radius: 10px;
 }
 
 /* CONTACT */
@@ -475,12 +476,12 @@ body {
 /* DARK MODE */
 
 .dark-mode {
-    background: #f1f5f9;
+    background: #F6E3B8;
     color: #0f172a;
 }
 
 .dark-mode .navbar {
-    background: #e2e8f0;
+    background: #F6E3B8;
 }
 
 .dark-mode .nav-links a {
@@ -492,7 +493,7 @@ body {
 .dark-mode .blog-card,
 .dark-mode .testimonial-card,
 .dark-mode .subscribe {
-    background: #cbd5e1;
+    background: #e8d3a2;
     color: #0f172a;
 }
 
