@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found | Kudjoba Solutions</title>
+  <meta name="description" content="The page you were looking for could not be found.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0B1220">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="/UTS-Technologies-zm/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/UTS-Technologies-zm/apple-touch-icon.png">
+  <link rel="preload" href="/UTS-Technologies-zm/assets/fonts/lexend-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/UTS-Technologies-zm/assets/fonts/source-sans-3-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/UTS-Technologies-zm/assets/css/main.css">
+
+  <script>
+    /* Apply the saved or system theme before first paint to avoid a flash. */
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('kudjoba-theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', t);
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header is-scrolled">
+    <div class="container header-inner">
+      <a class="brand" href="/UTS-Technologies-zm/index.html" aria-label="Kudjoba Solutions home">
+        <img src="/UTS-Technologies-zm/assets/img/logo.webp" alt="" width="40" height="40">
+        <span class="brand-text"><span class="brand-name">KUDJOBA</span><span class="brand-sub">SOLUTIONS</span></span>
+      </a>
+      <div class="header-actions" style="margin-left:auto">
+        <a class="btn btn-secondary btn-sm" href="/UTS-Technologies-zm/index.html">Back to home</a>
+      </div>
+    </div>
+  </header>
+  <main id="main" tabindex="-1" class="page-simple">
+    <div class="container notfound">
+      <div>
+        <p class="code">404</p>
+        <h1>We could not find that page</h1>
+        <p>The link may be out of date, or the page may have moved.</p>
+        <a class="btn btn-primary" href="/UTS-Technologies-zm/index.html">Go to the home page</a>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> Kudjoba Solutions. All rights reserved.</p>
+      <a href="/UTS-Technologies-zm/index.html#contact">Contact</a>
+    </div>
+  </footer>
+  <script>document.querySelectorAll("[data-year]").forEach(function(e){e.textContent=new Date().getFullYear()});</script>
+</body>
+</html>

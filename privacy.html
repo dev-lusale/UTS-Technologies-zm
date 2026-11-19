@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy notice | Kudjoba Solutions</title>
+  <meta name="description" content="How Kudjoba Solutions handles the information you send through this website.">
+  <meta name="theme-color" content="#0B1220">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/lexend-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/source-sans-3-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <script>
+    /* Apply the saved or system theme before first paint to avoid a flash. */
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('kudjoba-theme'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', t);
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header is-scrolled">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Kudjoba Solutions home">
+        <img src="assets/img/logo.webp" alt="" width="40" height="40">
+        <span class="brand-text"><span class="brand-name">KUDJOBA</span><span class="brand-sub">SOLUTIONS</span></span>
+      </a>
+      <div class="header-actions" style="margin-left:auto">
+        <a class="btn btn-secondary btn-sm" href="index.html">Back to home</a>
+      </div>
+    </div>
+  </header>
+  <main id="main" tabindex="-1" class="page-simple">
+    <div class="container prose">
+      <p class="eyebrow">Legal</p>
+      <h1>Privacy notice</h1>
+      <p>This notice explains what information this website collects and how Kudjoba Solutions uses it.</p>
+      <h2>Information you send us</h2>
+      <p>When you submit the enquiry form we receive the details you enter: your name, email address, organisation, the service you are interested in, an optional budget range and your project description.</p>
+      <h2>How we use it</h2>
+      <ul>
+        <li>To reply to your enquiry and discuss your project.</li>
+        <li>To keep a record of our correspondence with you.</li>
+      </ul>
+      <p>We do not sell your information or use it for unrelated marketing.</p>
+      <h2>Who processes it</h2>
+      <p>Form submissions are delivered to us through a third-party form service, which stores them on our behalf. The website itself is hosted on GitHub Pages.</p>
+      <h2>Cookies and storage</h2>
+      <p>This website does not use advertising or tracking cookies. It stores one setting in your browser, your light or dark theme choice, so the site remembers it on your next visit.</p>
+      <h2>Your choices</h2>
+      <p>You can ask us to correct or delete the information you sent us at any time by contacting us through the enquiry form.</p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> Kudjoba Solutions. All rights reserved.</p>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </footer>
+  <script>document.querySelectorAll("[data-year]").forEach(function(e){e.textContent=new Date().getFullYear()});</script>
+</body>
+</html>
